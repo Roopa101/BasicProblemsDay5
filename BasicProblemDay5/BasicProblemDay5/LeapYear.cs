@@ -10,7 +10,7 @@ namespace BasicProblemDay5
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the year:");
+            Console.WriteLine("Enter the  year 4 digit number:");
             int year = Convert.ToInt32(Console.ReadLine());
 
             if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
