@@ -10,18 +10,18 @@ namespace BasicProblemDay5
     {
         static void Main(string[] args)
         {
-            
-            int fact = 1;
-            int i;
-            Console.WriteLine("Enter the input number:");
-            int number = int.Parse(Console.ReadLine());
-            for (i = 1; i <= number; i++)
+            int a, b;
+            Console.WriteLine("Please Enter the number: ");
+            a = int.Parse(Console.ReadLine());
+            for (b = 1; b <= a; b++)
             {
-                fact = fact * i;
+                if (a % b == 0)
+                {
+                    Console.WriteLine(b + " is a factor of " + a);
+                }
             }
-            Console.WriteLine("factorial of" + number + "is  " + fact );
+           
             Console.ReadLine();
         }
     }
 }
-    
